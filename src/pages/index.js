@@ -1,4 +1,4 @@
 import { Home } from "./home/home";
 import { Contact } from "./contact/contact";
-
-export {Home, Contact}
+import { Cv } from "./cv/cv";
+export {Home, Contact, Cv}
