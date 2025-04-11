@@ -1,2 +1,3 @@
 import { Layout } from "./layout/layout"
-export {Layout}
+import { Card } from "./card/card"
+export {Layout, Card}
