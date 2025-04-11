@@ -1,7 +1,8 @@
+import { Card } from "../../components"
 const Home = ()=>{
     return(
         <>
-        <h1>Home</h1>
+        <Card title="Home" description="Description" />
         </>
     )
 }
