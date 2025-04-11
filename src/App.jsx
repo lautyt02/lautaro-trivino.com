@@ -4,8 +4,9 @@ import { Layout } from './components'
 function App() {
 
   return (
-    <Layout>
       <BrowserRouter>
+    <Layout>
+      
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact/' element={<Contact/>}/>
@@ -13,8 +14,8 @@ function App() {
         <Route path='/cv/' element={<Cv/>}/>
         <Route path='/admin/' element={<Admin/>} />
       </Routes>
-    </BrowserRouter>
     </Layout>
+      </BrowserRouter>
   )
 }
 
