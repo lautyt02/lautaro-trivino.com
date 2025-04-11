@@ -1,7 +1,7 @@
 const Filter = ({name,id,options,selectFunction})=>{
     return(
         <select name={name} id={id} onChange={selectFunction}>
-            {options.map((opt)=> <option value={opt.value}>{opt.text}</option> )}
+            {options.map((opt,i)=> <option key={opt.value + i} value={opt.value}>{opt.text}</option> )}
         </select>
     )
 }

@@ -6,7 +6,7 @@ const Card = ({title,picture,description,buttons})=>{
             <div>image{picture??""}</div>
             <p>{description??""}</p>
             <div>
-                {buttons??""}
+                {buttons.map((btn,i) => <button key={btn.text + i} onClick={btn.action}>{btn.text}</button>)}
             </div>
         </div>
         </>
