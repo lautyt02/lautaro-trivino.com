@@ -1,5 +1,5 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import { Home ,Contact,Cv,Projects} from './pages'
+import { Home ,Contact,Cv,Projects, Admin} from './pages'
 import { Layout } from './components'
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
         <Route path='/contact/' element={<Contact/>}/>
         <Route path='/projects/' element={<Projects/>}/>
         <Route path='/cv/' element={<Cv/>}/>
+        <Route path='/admin/' element={<Admin/>} />
       </Routes>
     </BrowserRouter>
     </Layout>
