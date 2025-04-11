@@ -7,9 +7,7 @@ const Projects = ()=>{
         <>
         <h1>Projects</h1>
         <Search/>
-        {projects.map((project,index)=> {
-            console.log(project.title + index)
-            return <Card key={project.title + index} title={project.title} description={project.description} buttons={project.buttons}/>})}
+        {projects.map((project,index)=> <Card key={project.title + index} title={project.title} description={project.description} buttons={project.buttons}/>)}
         </>
     )
 }
