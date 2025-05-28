@@ -5,8 +5,6 @@ const getProject = async (id) => {
     const docRef = doc(db, collName, id)
     const snapshot = await getDoc(docRef)
     return snapshot || "No existe el proyecto solicitado"
-
-
 }
 const getProjects = async () => {
     const db = getFirestore()
