@@ -1,5 +1,5 @@
 const Admin = ()=>{
-    const isAdmin=false
+    const isAdmin=true
     return(
         <>
         {isAdmin&& <h1>Admin</h1>}
